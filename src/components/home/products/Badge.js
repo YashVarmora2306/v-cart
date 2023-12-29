@@ -1,7 +1,7 @@
-const Badge = () => {
+const Badge = ({text}) => {
     return (
-        <div>
-            Badge!!!
+        <div className="bg-primeColor w-[92px] h-[35px] text-white flex-white flex justify-center items-center text-base font-semibold hover:bg-black duration-300 cursor-pointer">
+            {text}
         </div>
     )
 }

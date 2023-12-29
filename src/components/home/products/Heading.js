@@ -1,7 +1,7 @@
-const Heading = () => {
+const Heading = ({heading}) => {
     return (
-        <div>
-            Heading!!!
+        <div className="text-3xl font-semibold pb-6">
+            {heading}
         </div>
     )
 }
