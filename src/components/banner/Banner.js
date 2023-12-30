@@ -11,11 +11,12 @@ import Image from "../designLayouts/Image";
 const Banner = () => {
     const [dotActive, setDocActive] = useState(0);
     const settings = {
-        dot: true,
+        dots: true,
         infinite: true,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrow: false,
+        arrows: false,
         beforeChange: (prev, next) => {
             setDocActive(next);
         },

@@ -17,7 +17,7 @@ export const vCartSlice = createSlice({
                 item.quantity += action.payload.quantity;
             }
             else {
-                item.products.push(action.payload);
+                state.products.push(action.payload);
             }
         },
         increaseQuantity: (state, action) => {
@@ -28,7 +28,7 @@ export const vCartSlice = createSlice({
                 item.quantity++;
             }
         },
-        decreaseQuantity: (state, action) => {
+        drecreaseQuantity: (state, action) => {
             const item = state.products.find(
                 (item) => item._id === action.payload._id
              );
@@ -52,7 +52,7 @@ export const vCartSlice = createSlice({
 export const {
     addToCart,
     increaseQuantity,
-    decreaseQuantity,
+    drecreaseQuantity,
     deleteItem,
     resetCart,
 } = vCartSlice.actions;

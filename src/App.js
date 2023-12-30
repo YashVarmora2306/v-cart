@@ -51,10 +51,10 @@ const router = createBrowserRouter(
                 <Route path="/offer" element={<Offer />}></Route>
                 <Route path="/product/:_id" element={<ProductDetails />}></Route>
                 <Route path="/cart" element={<Cart />}></Route>
-                <Route path="/paymentgateway" element={<Payment />}></Route>
+                <Route path="/paymentGateway" element={<Payment />}></Route>
             </Route>
-            <Route path="/signup" element={<SignUp />}></Route>
-            <Route path="/signin" element={<SignIn />}></Route>
+            <Route path="/signUp" element={<SignUp />}></Route>
+            <Route path="/signIn" element={<SignIn />}></Route>
         </Route>
     )
 )
